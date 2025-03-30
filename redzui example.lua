@@ -1,4 +1,4 @@
-local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/NHMdz/BloxFruit/refs/heads/main/RedzLib.lua.txt"))()
+local redzlib = loadstring(game:HttpGet("https://github.com/ducknovis/redzui/raw/refs/heads/main/redzui.lua"))()
 
 local window = redzlib:MakeWindow({
     Name = "Giao Diện Mẫu",

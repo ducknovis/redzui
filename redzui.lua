@@ -12,13 +12,13 @@ local redzlib = {
 	Themes = {
 		Darker = {
 			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(25, 25, 25)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(32.5, 32.5, 32.5)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(25, 25, 25))
+				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(20, 20, 20)),
+				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(25.5, 25.5, 25.5)),
+				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(20, 20, 20))
 			}),
-			["Color Hub 2"] = Color3.fromRGB(30, 30, 30),
+			["Color Hub 2"] = Color3.fromRGB(27, 27, 27),
 			["Color Stroke"] = Color3.fromRGB(40, 40, 40),
-			["Color Theme"] = Color3.fromRGB(88, 101, 242),
+			["Color Theme"] = Color3.fromRGB(0, 255, 255),
 			["Color Text"] = Color3.fromRGB(243, 243, 243),
 			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)
 		},
@@ -1401,8 +1401,8 @@ function redzlib:SetScale(NewScale)
 end
 
 function redzlib:MakeWindow(Configs)
-	local WTitle = Configs[1] or Configs.Name or Configs.Title or "redz Library V5"
-	local WMiniText = Configs[2] or Configs.SubTitle or "by : redz9999"
+	local WTitle = Configs[1] or Configs.Name or Configs.Title or "Script Name"
+	local WMiniText = Configs[2] or Configs.SubTitle or "sub"
 	
 	Settings.ScriptFile = Configs[3] or Configs.SaveFolder or false
 	
@@ -1458,7 +1458,7 @@ function redzlib:MakeWindow(Configs)
 		TextSize = 12,
 		TextColor3 = Theme["Color Text"],
 		BackgroundTransparency = 1,
-		Font = Enum.Font.GothamMedium,
+		Font = Enum.Font.FredokaOne,
 		Name = "Title"
 	}, {
 		InsertTheme(Create("TextLabel", {
@@ -1581,7 +1581,7 @@ function redzlib:MakeWindow(Configs)
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
 			Title = "Close",
-			Text = "You Want Close Ui?",
+			Text = "Do you want to close UI ?",
 			Options = {
 				{"Confirm", function()
 					ScreenGui:Destroy()
@@ -1956,7 +1956,7 @@ function redzlib:MakeWindow(Configs)
 				Position = UDim2.new(1, -10, 0.5),
 				AnchorPoint = Vector2.new(1, 0.5),
 				BackgroundTransparency = 1,
-				Image = "rbxassetid://10709791437"
+				Image = "rbxassetid://10723375250"
 			})
 			
 			FButton.Activated:Connect(function()
